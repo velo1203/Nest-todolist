@@ -10,8 +10,8 @@ async function bootstrap() {
   app.useGlobalPipes(new ValidationPipe());
 
   const config = new DocumentBuilder() // 여기에서 Swagger 설정을 추가합니다.
-    .setTitle('Nest boilerplate API')
-    .setDescription('Nest API Example using Prisma and Swagger')
+    .setTitle('Nest Todo API')
+    .setDescription('The Nest TodoList Backend Example API')
     .setVersion('1.0')
     .build();
   const document = SwaggerModule.createDocument(app, config); // 여기에서 Swagger 문서를 생성합니다.

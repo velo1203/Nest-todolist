@@ -11,7 +11,8 @@ import {
 import { TodoService } from './todo.service';
 import { AuthGuard } from 'src/auth/guard/auth.guard';
 import { CreateTodoDto, DeleteTodoDto, PatchTodoDto } from './dto/todo.dto';
-
+import { ApiTags } from '@nestjs/swagger';
+@ApiTags('Todo API')
 @Controller('todo')
 export class TodoController {
   constructor(private todoService: TodoService) {}
