@@ -13,3 +13,9 @@ http://localhost:3000/api
 ```
 
 **the swagger documentation will be available at this endpoint**
+
+# Run the app
+
+```bash
+npm run start:dev
+```
